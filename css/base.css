@@ -1,5 +1,5 @@
 :root {
-  --marquee-width: 80vw;
+  --marquee-width: 70vw;
   --marquee-height: 15vh;
   --marquee-elms-displayed: 5;
   --marquee-elm-width: calc(var(--marquee-width) / var(--marquee-elms-displayed));

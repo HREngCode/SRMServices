@@ -84,6 +84,10 @@
   transform: scaleX(-1);
 }
 
+.site-header {
+  margin: 0px 200px;
+}
+
 .navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -446,7 +450,7 @@
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
-  height: 200px;
+  height: 300px;
 }
 
 [data-animation="zoomInOut"].full-site-modal {
