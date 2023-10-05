@@ -29,17 +29,18 @@
   </div>
   <main class="site-wrapper">
     <header class="site-header">
-      <nav class="navbar">
-        <div class="brand-logo">
-          <a href="/">
+      <nav id="topNav" class="navbar nav">
+        <div class="container">
+          <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+            <span>&#9776;</span>
+          </button>
+          <a  href="/">
             <h2>Welcome to The Ranch</h2>
           </a>
-        </div>
-        <div class="navbar-nav">
-          <ul class="ul-defaults-none main-menu">
+          <ul class="navbar-nav ul-defaults-none main-menu">
             <li class="nav-item">Home</li>
-            <li class="nav-item" data-open="about">About Me</li>
-            <li class="nav-item" data-open="contact">Contact</li>
+            <li class="nav-item about-button" data-open="about">About Me</li>
+            <li class="nav-item contact-button" data-open="contact">Contact</li>
           </ul>
         </div>
       </nav>
@@ -268,9 +269,9 @@
           </div>
           <div class="about-text">
             <h2 class="header-md">Chad Sailors</h2>
-            <p>Full Stack Developer based in the heart of the Midwest. There is more than just corn that is developed
-              around here. We don't just dig into dirt. We dig into data as well.</p>
-            <p>Writing code is my favorite past time. Sometimes it can lead past time to get off the computer, but
+            <p>Full-Stack Developer based in the heart of the Midwest. There is more than just corn that is developed
+              around here. We don't just dig into dirt, we dig into data as well.</p>
+            <p>Writing code is my favorite pastime. Sometimes it can lead to "passed time" to get off the computer, but
               that's only because I enjoy it so much.</p>
             <div class="contact-me-block">
               <div>Email Me:</div>
@@ -303,14 +304,19 @@
             <div>Have a project or question? Send me a message</div>
             <div>I will reply within 48 hours.</div>
           </div>
-          <form class="folio-form">
-            <input class="form-control" name="name" type="text" placeholder="Name">
-            <input class="form-control" name="email" type="email" placeholder="Email">
-            <input class="form-control" name="subject" type="text" placeholder="Subject">
-            <textarea class="form-control" name="message" cols="30" rows="3"
-              placeholder="Write your message..."></textarea>
+          <div class="form-container">
+            <form class="folio-form">
+              <div class="input-container">
+                <input class="form-control" name="name" type="text" placeholder="Name">
+                <input class="form-control" name="email" type="email" placeholder="Email">
+                <input class="form-control" name="subject" type="text" placeholder="Subject">
+                <textarea class="form-control" name="message" cols="30" rows="3"
+                  placeholder="Write your message..."></textarea>
+              </div>
             <input type="submit" value="Send" class="btn btn-primary round-pill">
           </form>
+          </div>
+
         </div>
       </div>
     </div>

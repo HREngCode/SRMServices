@@ -6,6 +6,7 @@ const dark = 'dark';
 const light = 'light';
 const open = 'open';
 const active = 'active';
+// const navButton = document.querySelector( 'button[aria-expanded]' );
 
 const modalOpen = '[data-open]';
 const modalClose = '[data-close]';
@@ -351,3 +352,26 @@ root.style.setProperty('--marquee-elms', marqueeContent.children.length);
 for (let i = 0; i < elmsDisplayed; i += 1) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true))
 }
+
+// Mobile NavButton
+// function toggleNav({ target }) {
+//   const expanded = target.getAttribute( 'aria-expanded') === 'true' || false;
+//   navButton.setAttribute('aria-expanded', !expanded);
+
+//   if (!expanded) {
+//     navbarNav.style.display = 'block';
+//   } else {
+//     navbarNav.style.display = 'none';
+//   }
+// }
+
+// navButton.addEventListener('click', toggleNav);
+
+const navButton = document.querySelector( 'button[aria-expanded]' );
+
+function toggleNav({ target }) {
+  const expanded = target.getAttribute( 'aria-expanded') === 'true' || false;
+  navButton.setAttribute('aria-expanded', !expanded);
+}
+
+navButton.addEventListener('click', toggleNav);

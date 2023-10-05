@@ -85,18 +85,125 @@
 }
 
 .site-header {
-  margin: 0px 200px;
+  margin: 0px 100px;
 }
 
-.navbar {
+ .navbar {
   display: flex;
   flex-flow: row nowrap;
   padding: 0.5rem 1rem;
   width: 100%;
+  align-items: center;
 }
 
-.navbar .navbar-nav {
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  align-items: center;
+  z-index: 98;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar.sticky {
+  background: white;
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+}
+
+.navbar.sticky .navbar-toggler span, 
+.navbar.sticky .navbar-brand {
+  color: #666;
+} 
+
+.navbar-toggler {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+    margin-left: auto;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  transition: ease-in-out 0.3s;
+  color: #666;
+}
+
+.nav-link a {
+  color: #666;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  margin-right: 40px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+  
+  [aria-expanded="false"]~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a{
+    margin-right: 20px;
+    color: #666;
+  }
 }
 
 .brand-logo a h2 {
@@ -410,9 +517,15 @@
   cursor: default;
 }
 
+.container-fluid .modal-header {
+  display: flex;
+  padding: 1rem 10rem;
+  justify-content: space-between;
+}
+
 .modal-header {
   display: flex;
-  padding-bottom: 1rem;
+  padding: 1rem;
   justify-content: space-between;
 }
 
