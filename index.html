@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <title>stallion ranch media</title>
+</head>
+
+<body>
+  <div class="theme-panel">
+    <div class="theme-body">
+      <span>Change Theme</span>
+      <div class="btn-group">
+        <button data-toggle="light" class="switcher-btn active">Light</button>
+        <button data-toggle="dark" class="switcher-btn">Dark</button>
+      </div>
+      <button class="theme-tab">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+    </div>
+  </div>
+  <main class="site-wrapper">
+    <header class="site-header">
+      <nav id="topNav" class="navbar nav">
+        <div class="container">
+          <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+            <span>&#9776;</span>
+          </button>
+          <a  href="/">
+            <h2>Welcome to The Ranch</h2>
+          </a>
+          <ul class="navbar-nav ul-defaults-none main-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item about-button" data-open="about">About Me</li>
+            <li class="nav-item contact-button" data-open="contact">Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero-bg">
+      <div class="container">
+        <div class="hero-content">
+          <div class="logo">
+            <img src="./assets/images/logo.jpg" alt="SRM Logo">
+            <!-- <i class="fas fa-code"></i> -->
+          </div>
+          <div class="sub-header">
+            Creating Tools To Make Business Easier
+            <br />
+            &
+            <br />
+            Allowing You To Focus On What Matters Most
+          </div>
+          <div class="btn btn-primary round-pill">
+            <a href="#" data-open="contact">Let's talk now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <div class="container search-container">
+        <label for="search">
+          <input autocomplete="off" id="search" type="text" class="search-input" placeholder="Search..." />
+          <i class="fas fa-search"></i>
+        </label>
+        <ul class="portfolio-filter-nav ul-defaults-none">
+          <li data-filter="all" class="filter-link active">All Phases</li>
+          <li data-filter="discovery" class="filter-link">Discovery</li>
+          <li data-filter="development" class="filter-link">Development</li>
+          <li data-filter="support" class="filter-link">Support</li>
+        </ul>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card" data-item="discovery" data-open="discovery-1">
+          <div class="card-body">
+            <img src="./assets/images/cust_needs.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Discovery</div>
+              <h3>Customer Need</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="discovery" data-open="discovery-2">
+          <div class="card-body">
+            <img src="./assets/images/document.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Discovery</div>
+              <h3>Documentation</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="discovery" data-open="discovery-3">
+          <div class="card-body">
+            <img src="./assets/images/Design.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Discovery</div>
+              <h3>Design</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="development" data-open="development-1">
+          <div class="card-body">
+            <img src="./assets/images/architect.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Development</div>
+              <h3>Architecture</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="development" data-open="development-2">
+          <div class="card-body">
+            <img src="./assets/images/coding.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Development</div>
+              <h3>Programming</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="development" data-open="development-3">
+          <div class="card-body">
+            <img src="./assets/images/unittest.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Development</div>
+              <h3>Unit Testing</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="support" data-open="support-1">
+          <div class="card-body">
+            <img src="./assets/images/troubleshoot.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Support</div>
+              <h3>Troubleshooting</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-item="support" data-open="support-2">
+          <div class="card-body">
+            <img src="./assets/images/enhance.jpg" alt="portfolio-icon" />
+            <div class="card-popup-box">
+              <div>Support</div>
+              <h3>Enhancements</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio-card-container" class="portfolio-grid">
+        <!-- Section to generate cards dynamically -->
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="review-title">Who We Are</div>
+      <h2 class="header-md">Industry Experience</h2>
+      <div class="review-preview">
+        <img src="./assets/images/cube.png" alt="cube">
+      </div>
+
+      <div class="review-carousel">
+
+        <div class="review-item">
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+
+            <div class="details">
+              <div class="name">Talent Acquisition Services</div>
+              <div class="company">Kforce / Productive Resources</div>
+            </div>
+          </div>
+          <div class="review-text">
+            Strong background in working with applicant tracking systems and tracking metrics for full lifecycle recruiting data.
+          </div>
+        </div>
+
+        <div class="review-item">
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+
+            <div class="details">
+              <div class="name">Manufacturing</div>
+              <div class="company">Vermeer/Maytag/Pella//Gates/Weiler</div>
+            </div>
+          </div>
+          <div class="review-text">
+            Very familiar with Content Management Systems and Engineering Programs. Hands on experience with Design Verification.
+          </div>
+        </div>
+
+        <div class="review-item">
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+
+            <div class="details">
+              <div class="name">Construction</div>
+              <div class="company">Weitz/Midwest Basement Systems</div>
+            </div>
+          </div>
+          <div class="review-text">
+            Administrated Safety Tracking and Company LMS for OSHA records. Key contributor to onboarding systems for new employees.
+          </div>
+
+        </div>
+
+        <div class="review-item">
+          <div class="review-author">
+            <div class="avatar">
+              <img src="./assets/images/ava-1.jpg" alt="avatar">
+            </div>
+
+            <div class="details">
+              <div class="name">Mechanical-Electrical-Plumbing Service</div>
+              <div class="company">Waldinger/TWC Services</div>
+            </div>
+          </div>
+          <div class="review-text">
+            Responsible for Total Rewards programs and system administration. Oversaw performance management process from end to end.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slide-ctrl-container">
+        <button>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- Modals-->
+    <!-- About Page Modal-->
+    <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
+      <div class="container-fluid">
+        <header class="modal-header">
+          <h3>ABOUT PAGE</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/profile-pic.png" alt="head shot" />
+          </div>
+          <div class="about-text">
+            <h2 class="header-md">About Me</h2>
+            <p>Full-Stack Developer based in the heart of the Midwest. There is more than just corn that is developed
+              around here. We don't just dig into dirt, we dig into data as well.</p>
+            <p>Writing code is my favorite pastime. Sometimes it can lead to "passed time" to get off the computer, but
+              that's only because I enjoy it so much.</p>
+            <div class="contact-me-block">
+              <div>Email Me:</div>
+              <a href="mailto:stallionranchmedia@gmail.com">stallionranchmedia@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-codepen"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fab fa-aws"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Page Modal-->
+    <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
+      <div class="container-fluid">
+        <header class="modal-header">
+          <h3>CONTACT PAGE</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="contact-text">
+            <h2 class="header-md">Let's Talk</h2>
+            <div>Have a project or question? Send me a message</div>
+            <div>I will reply within 48 hours.</div>
+          </div>
+          <div class="form-container">
+            <form class="folio-form" id="contactForm">
+              <div class="input-container">
+                <input class="form-control" name="from_name" type="text" placeholder="Your Name" required>
+                <input class="form-control" name="reply_to" type="email" placeholder="Your Email" required>
+                <input class="form-control" name="title" type="text" placeholder="Subject">
+                <textarea class="form-control" name="message" cols="30" rows="3"
+                  placeholder="Your Message" required></textarea>
+              </div>
+            <input type="submit" value="Send" class="btn btn-primary round-pill">
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modals -->
+    <div id="discovery-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Discovery</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/cust_needs.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Customer Need</strong></p>
+            <p>I seek to understand the current process and the intended outcome through basic questions and interaction with users.</p>
+            <p>Once the outcome is agreed upon, I make sure there is clarify the plan to ensure the scope of the project is defined.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="discovery-2" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Discovery</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/document.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Documentation</strong></p>
+            <p>Once the customer need is defined, then documentation is composed to ensure that project can be tracked properly.</p>
+            <p>User stories are defined and tasks are entered into the Project Management app to establish timelines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="discovery-3" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Discovery</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/Design.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Design</strong></p>
+            <p>Mockups are created in Figma to ensure that the design is agreed upon. This includes determining page navigation and required menus.</p>
+            <p>Once the prototype is finished, it is once again reviewed with the customer to ensure the intended outcome is agreed upon one last time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="development-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Development</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/architect.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Architecture</strong></p>
+            <p>The project's initial layout is done using DRY principles and intended to use the most efficient processing methods possible.</p>
+            <p>Prior to coding, the layout is to align with the tasks listed in the Project Management database.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="development-2" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Development</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/coding.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Programming</strong></p>
+            <p>Coding is done piece by piece starting with the initial HTML to create the content. This is followed by the necessary CSS and Javascript. </p>
+            <p>Once the content is created, every change possible is submitted to GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="development-3" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Development</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/unittest.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Unit Testing</strong></p>
+            <p>As each section of code is completed, it is tested for functionality to ensure that the program is working properly. </p>
+            <p>It is also tested for aesthetics and to ensure that links work properly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="support-1" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Support</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/troubleshoot.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Troubleshooting</strong></p>
+            <p>Any bugs found in the program will be handled based on customer need and tracked in the Project Management system.</p>
+            <p>Updates and corrections will be noted in GitHub as new versions of the code are submitted.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="support-2" class="modal" data-animation="slideInOutTop">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3>Support</h3>
+          <i class="fas fa-times" data-close></i>
+        </header>
+        <div class="modal-body">
+          <div class="img-wrapper">
+            <img src="./assets/images/enhance.jpg" alt="portfolio image">
+          </div>
+          <div class="text-wrapper">
+            <p><strong>Enhancement</strong></p>
+            <p>Enhancement ideas restarts the process. These will be done sprints and tested accordingly.</p>
+            <p>Once the updates are authorized by the customer, the new version will be deployed. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio-modal-container" class="portfolio-modal-container">
+
+    </div>
+
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS
+      (function() {
+        emailjs.init("xxxxxxx"); // your EmailJS public key
+      })();
+    
+      // Elements
+      const modal = document.getElementById("contactModal");
+      const openBtn = document.getElementById("openContact");
+      const closeBtn = document.getElementById("closeModal");
+      const form = document.getElementById("contactForm");
+      const successMessage = document.getElementById("successMessage");
+    
+      // Open modal
+      openBtn.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
+    
+      // Close modal (click the X)
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+    
+      // Close modal if clicking outside of it
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) modal.style.display = "none";
+      });
+    
+      // Handle form submission
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+    
+        const submitButton = form.querySelector("button[type='submit']");
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+    
+        emailjs.sendForm("xxxxxx", "xxxxxxx", form)
+          .then(() => {
+            // Show success message
+            successMessage.style.display = "block";
+    
+            // Reset form fields
+            form.reset();
+    
+            // Re-enable button
+            submitButton.disabled = false;
+            submitButton.textContent = "Send Message";
+    
+            // Hide modal after short delay
+            setTimeout(() => {
+              successMessage.style.display = "none";
+              modal.style.display = "none";
+            }, 2500);
+          })
+          .catch((error) => {
+            console.error("Email failed:", error);
+            submitButton.disabled = false;
+            submitButton.textContent = "Send Message";
+          });
+      });
+    </script>
+
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>
